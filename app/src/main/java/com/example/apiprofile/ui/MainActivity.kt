@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
             val userCell = it.results[0].cell
             val userGender = it.results[0].gender
             val userEmail = it.results[0].email
+            val userCity = it.results[0].location.city
 
             binding.textViewNameUser.text = "Nombre: $userName"
             binding.textViewAgeUser.text = "Edad: $userAge"
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
             binding.textViewCellUser.text = "Celular: $userCell"
             binding.textViewGenderUser.text = "Genero: $userGender"
             binding.textViewEmailUser.text = "Correo: $userEmail"
+            binding.textViewCitylUser.text = "Ciudad: $userCity"
         }
     }
 
