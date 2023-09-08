@@ -48,6 +48,5 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val Name = "Nombre:"
     }
 }
