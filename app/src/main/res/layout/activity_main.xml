@@ -1,102 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.MainActivity">
 
     <ImageView
         android:id="@+id/imagenViewProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:id="@+id/textViewNameUser"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:text="Name"
+        android:text="@string/name"
+        android:layout_gravity="center"
         android:textSize="20sp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenViewProfile" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNameUser">
+        android:layout_marginTop="50dp"/>
 
         <TextView
             android:id="@+id/textViewGenderUser"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:text="Gender"
+            android:layout_gravity="center"
+            android:text="@string/gender"
             android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/textViewAgeUser"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:text="Age"
+            android:layout_gravity="center"
+            android:text="@string/age"
             android:textSize="15sp"
             android:layout_marginTop="10dp"/>
 
         <TextView
             android:id="@+id/textViewDateUser"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:text="Date"
+            android:layout_gravity="center"
+            android:text="@string/date"
             android:textSize="15sp" />
 
         <TextView
             android:id="@+id/textViewCellUser"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:text="Cell"
+            android:layout_gravity="center"
+            android:text="@string/cell"
             android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/textViewEmailUser"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:text="Email"
+            android:layout_gravity="center"
+            android:text="@string/email"
             android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/textViewCitylUser"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:text="City"
+            android:layout_gravity="center"
+            android:text="@string/city"
             android:textSize="15sp"/>
-
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
